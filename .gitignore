@@ -65,8 +65,10 @@ coverage
 coverage.json
 typechain
 typechain-types
+.prettierrc
 
 #Hardhat files
 cache
 artifacts
+.vscode
 

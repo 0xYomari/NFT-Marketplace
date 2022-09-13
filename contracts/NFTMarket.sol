@@ -40,10 +40,6 @@ contract NFTMarket is ReentrancyGuard {
         bool sold
     );
 
-    function getListingPrice() public view returns (uint256) {
-        return listingPrice;
-    }
-
     function createMarketItem(
         address nftContract,
         uint256 tokenId,
@@ -154,5 +150,9 @@ contract NFTMarket is ReentrancyGuard {
             }
         }
         return items;
+    }
+
+    function getListingPrice() public view returns (uint256) {
+        return listingPrice;
     }
 }
